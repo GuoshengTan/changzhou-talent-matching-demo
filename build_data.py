@@ -1,0 +1,33 @@
+"""公开页面的人工结构化摘要。未收集联系方式、出生日期或求职意愿。"""
+import json,csv
+from pathlib import Path
+OUT=Path(__file__).resolve().parent
+raw=[
+('C01','邹培超','苏州大学','https://energy.suda.edu.cn/88/dc/c9713a559324/page.psp/main.psp','电极材料及储能器件研究，电解液和固态电解质设计，离子输运与原位表征。',{'电池材料':'新型电极材料和储能器件方向','固态电解质':'固态电解质设计及离子输运方向','原位表征':'新能源材料原位表征方向'}),
+('C02','刘珂君','苏州大学','https://funsom.suda.edu.cn/aa/c7/c2735a568007/page.htm','研究多孔聚合物固态电解质及离子传输，涉及合成、结构表征、界面稳定性和全固态电池。',{'电池材料':'面向全固态电池的材料研究','固态电解质':'多孔聚合物固态电解质研究','高分子':'聚合物电解质研究','原位表征':'原位电化学等表征技术'}),
+('C03','赵杰','苏州大学','https://web.suda.edu.cn/jzhao/','研究功能高分子、离子液体电解质、凝胶与固体电解质及光电薄膜和能源器件。',{'高分子':'功能高分子材料方向','固态电解质':'凝胶和固体电解质方向','光电薄膜':'光电半导体薄膜材料方向'}),
+('C04','金超','苏州大学','https://web.suda.edu.cn/jinchao/','研究固态锂电池及固体氧化物电池关键材料与器件，主页列有复合电解质和聚合物电解质论文。',{'电池材料':'固态锂电池关键材料与器件','固态电解质':'主页列有复合电解质研究论文','高分子':'主页列有聚合物电解质研究论文'}),
+('C05','张永刚','中国科学院宁波材料所','https://fiber.nimte.ac.cn/view-9667.html','研究高性能碳纤维和碳纤维陶瓷基复合材料，具有碳纤维结构调控、工艺与设备管理经验。',{'碳纤维':'高性能碳纤维研究','复合材料':'碳纤维陶瓷基复合材料研究','工艺管理':'碳纤维工艺与设备管理经验'}),
+('C06','吴奇','南京航空航天大学','https://faculty.nuaa.edu.cn/wuqi/zh_CN/index.htm','研究复合材料成型多尺度仿真与光纤监测，开展复材成型优化及热塑性碳纤维复材成型模拟。',{'复合材料':'复合材料结构力学研究','成型':'复合材料成型多尺度仿真','碳纤维':'主页所列热塑性CFRP成型模拟项目','光纤监测':'基于先进光纤传感的智能结构'}),
+('C07','刘舒霆','南京航空航天大学','https://cmee.nuaa.edu.cn/2026/0711/c11688a405345/page.htm','研究先进复合材料构件智能制造，公开成果包括层合结构分区加热与成型模具专利。',{'复合材料':'先进复合材料构件智能制造研究','成型':'公开成型模具专利','智能制造':'先进复材智能制造方向'}),
+('C08','房芳','东南大学','https://automation.seu.edu.cn/ff/list.htm','研究移动和服务机器人控制、导航建图、人机交互与工业机器人，成果涉及恒力打磨和视觉分拣。',{'机器人':'移动服务机器人与工业机器人研究','控制':'机器人控制及恒力控制成果','导航':'导航建图方向','视觉':'机器人视觉分拣成果'}),
+('C09','周波','东南大学','https://automation.seu.edu.cn/zb_32794/list.htm','研究机器人感知、导航与控制、工业机器人复杂作业及机器人学习，开展视觉SLAM和导航算法项目。',{'机器人':'机器人与无人平台研究','控制':'机器人控制方向','导航':'导航算法研究项目','视觉':'视觉SLAM研究项目','机器人学习':'深度学习与强化学习机器人方法'}),
+('C10','王晓宇','东南大学','https://me.seu.edu.cn/wxy/list.htm','研究人机共享控制、机器人自主操作、增材制造感知及自适应控制，公开成果涉及机器视觉协同控制。',{'机器人':'自主智能机器人研究','控制':'人机共享控制与自适应控制','视觉':'机器视觉驱动协同控制','智能制造':'智能制造装备研究'})
+]
+candidates=[]
+for cid,name,org,url,summary,evidence in raw:
+ candidates.append(dict(id=cid,name=name,organization=org,url=url,summary=summary,skills=list(evidence),skill_evidence=evidence,data_status='public_research_profile',interest=None,job_eligibility='未完成招聘资格核验',source_date='页面日期不统一，以原网页为准',retrieved='2026-09-29',extraction='人工阅读公开页面后概括；标签为研究者编码；证据短句为释义而非引文'))
+sources=[dict(id='D01',title='常州大学材料学院王珂教授团队博士后招聘启事',date='2026-03-13',url='https://clxy.cczu.edu.cn/2026/0313/c11957a411149/page.htm',summary='招聘相关材料领域博士后；方向包括高分子功能材料、纤维复合材料及电池材料；优先经历包括碳纤维复材、加工成型、固态电解质。',constraints='相关专业博士、近五年高水平论文至少2篇或同等成果、英语能力、1992年1月1日及以后出生，获博士一般不超过三年。'),dict(id='D02',title='政府搭台 专家破题 学子逐梦 让技能人才香起来',date='2026-06-24',url='https://kjj.changzhou.gov.cn/html/kjj/2026/MHFDIKKN_0624/49602.html',summary='奥比利公开陈述机器人事业部需要研发工程师和算法工程师等应用型技术技能人才，共20人。',constraints='报道没有细分学历、专业和个人资格；20人为报道中的合计，不能作为高层次人才人数。')]
+queries=[
+dict(id='Q01',title='固态电解质材料研究',source='D01',text='电池材料 固态电解质材料研究',skills=['电池材料','固态电解质'],kind='从同一招聘公告抽取的技术方向',scope='仅用于科研方向检索，非博士后应聘排序'),
+dict(id='Q02',title='碳纤维复合材料加工成型',source='D01',text='碳纤维增强复合材料 复合材料加工和成型',skills=['碳纤维','复合材料','成型'],kind='从同一招聘公告抽取的技术方向',scope='与Q01同源，不计为新增招聘主体或岗位'),
+dict(id='Q03',title='机器人研发与算法',source='D02',text='机器人研发 算法 工程师',skills=['机器人'],kind='新闻需求陈述中的宽口径方向',scope='原文未列视觉、导航或控制等细分要求，因此这些技能不进入需求标签评分')]
+data=dict(title='常州产业技术需求与公开科研人才资源匹配演示',retrieved='2026-09-29',selection='围绕储能材料、复合材料、机器人三个方向目的性检索，纳入可核验的10个官方科研主页。非随机样本，非求职者库，不能估计全市供需。',sources=sources,queries=queries,candidates=candidates)
+(OUT/'public_data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
+with (OUT/'人才公开数据.csv').open('w',encoding='utf-8-sig',newline='') as f:
+ w=csv.writer(f);w.writerow(['编号','姓名','机构','研究摘要','技能标签','标签依据','来源','检索日期','合作意愿','招聘资格'])
+ for c in candidates:w.writerow([c['id'],c['name'],c['organization'],c['summary'],'；'.join(c['skills']),'；'.join(k+'：'+v for k,v in c['skill_evidence'].items()),c['url'],c['retrieved'],'未知',c['job_eligibility']])
+with (OUT/'需求公开数据.csv').open('w',encoding='utf-8-sig',newline='') as f:
+ w=csv.writer(f);w.writerow(['方向编号','技术方向','来源编号','需求标签','使用范围','来源链接'])
+ for q in queries:w.writerow([q['id'],q['title'],q['source'],'；'.join(q['skills']),q['scope'],next(s['url'] for s in sources if s['id']==q['source'])])
+print('10 profiles; 2 demand documents; 3 queries')

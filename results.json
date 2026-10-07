@@ -1,0 +1,493 @@
+{
+  "method": "0.7×显式标签覆盖率 + 0.3×字符二元组TF-IDF余弦相似度",
+  "weights_status": "人为设置，未经真实标签训练",
+  "data_sha256": "79c6c76de67a80806129e24957cc0aa590e80f7100bbfe533ad16453929c518c",
+  "rankings": {
+    "Q01": [
+      {
+        "candidate_id": "C02",
+        "name": "刘珂君",
+        "coverage": 1.0,
+        "text_similarity": 0.3549044425840191,
+        "score": 0.8064713327752057,
+        "covered": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C04",
+        "name": "金超",
+        "coverage": 1.0,
+        "text_similarity": 0.3381557793128111,
+        "score": 0.8014467337938433,
+        "covered": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C01",
+        "name": "邹培超",
+        "coverage": 1.0,
+        "text_similarity": 0.31609650703033215,
+        "score": 0.7948289521090997,
+        "covered": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C03",
+        "name": "赵杰",
+        "coverage": 0.5,
+        "text_similarity": 0.1522592800907027,
+        "score": 0.39567778402721077,
+        "covered": [
+          "固态电解质"
+        ],
+        "not_evidenced": [
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C07",
+        "name": "刘舒霆",
+        "coverage": 0.0,
+        "text_similarity": 0.06771985691280019,
+        "score": 0.02031595707384006,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C05",
+        "name": "张永刚",
+        "coverage": 0.0,
+        "text_similarity": 0.0633198776276191,
+        "score": 0.018995963288285733,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C06",
+        "name": "吴奇",
+        "coverage": 0.0,
+        "text_similarity": 0.060747605173676056,
+        "score": 0.01822428155210282,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C08",
+        "name": "房芳",
+        "coverage": 0.0,
+        "text_similarity": 0.011843278283395615,
+        "score": 0.003552983485018685,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C10",
+        "name": "王晓宇",
+        "coverage": 0.0,
+        "text_similarity": 0.011618288126060037,
+        "score": 0.0034854864378180113,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C09",
+        "name": "周波",
+        "coverage": 0.0,
+        "text_similarity": 0.01123786125979468,
+        "score": 0.0033713583779384046,
+        "covered": [],
+        "not_evidenced": [
+          "固态电解质",
+          "电池材料"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      }
+    ],
+    "Q02": [
+      {
+        "candidate_id": "C06",
+        "name": "吴奇",
+        "coverage": 1.0,
+        "text_similarity": 0.35430874473098883,
+        "score": 0.8062926234192966,
+        "covered": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C05",
+        "name": "张永刚",
+        "coverage": 0.6666666666666666,
+        "text_similarity": 0.37433807678245234,
+        "score": 0.5789680897014023,
+        "covered": [
+          "复合材料",
+          "碳纤维"
+        ],
+        "not_evidenced": [
+          "成型"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C07",
+        "name": "刘舒霆",
+        "coverage": 0.6666666666666666,
+        "text_similarity": 0.22605131925033145,
+        "score": 0.5344820624417661,
+        "covered": [
+          "复合材料",
+          "成型"
+        ],
+        "not_evidenced": [
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C04",
+        "name": "金超",
+        "coverage": 0.0,
+        "text_similarity": 0.092616123896858,
+        "score": 0.027784837169057403,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C01",
+        "name": "邹培超",
+        "coverage": 0.0,
+        "text_similarity": 0.04840081773922019,
+        "score": 0.01452024532176606,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C02",
+        "name": "刘珂君",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C03",
+        "name": "赵杰",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C08",
+        "name": "房芳",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C09",
+        "name": "周波",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C10",
+        "name": "王晓宇",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "复合材料",
+          "成型",
+          "碳纤维"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      }
+    ],
+    "Q03": [
+      {
+        "candidate_id": "C09",
+        "name": "周波",
+        "coverage": 1.0,
+        "text_similarity": 0.37728494791809997,
+        "score": 0.8131854843754299,
+        "covered": [
+          "机器人"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C08",
+        "name": "房芳",
+        "coverage": 1.0,
+        "text_similarity": 0.2242135007498328,
+        "score": 0.7672640502249498,
+        "covered": [
+          "机器人"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C10",
+        "name": "王晓宇",
+        "coverage": 1.0,
+        "text_similarity": 0.17493122959942903,
+        "score": 0.7524793688798287,
+        "covered": [
+          "机器人"
+        ],
+        "not_evidenced": [],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C01",
+        "name": "邹培超",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C02",
+        "name": "刘珂君",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C03",
+        "name": "赵杰",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C04",
+        "name": "金超",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C05",
+        "name": "张永刚",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C06",
+        "name": "吴奇",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      },
+      {
+        "candidate_id": "C07",
+        "name": "刘舒霆",
+        "coverage": 0.0,
+        "text_similarity": 0.0,
+        "score": 0.0,
+        "covered": [],
+        "not_evidenced": [
+          "机器人"
+        ],
+        "eligibility": "未核验",
+        "cooperation_interest": "未知"
+      }
+    ]
+  },
+  "sensitivity_top3": {
+    "0.5": {
+      "Q01": [
+        "C02",
+        "C04",
+        "C01"
+      ],
+      "Q02": [
+        "C06",
+        "C05",
+        "C07"
+      ],
+      "Q03": [
+        "C09",
+        "C08",
+        "C10"
+      ]
+    },
+    "0.7": {
+      "Q01": [
+        "C02",
+        "C04",
+        "C01"
+      ],
+      "Q02": [
+        "C06",
+        "C05",
+        "C07"
+      ],
+      "Q03": [
+        "C09",
+        "C08",
+        "C10"
+      ]
+    },
+    "0.9": {
+      "Q01": [
+        "C02",
+        "C04",
+        "C01"
+      ],
+      "Q02": [
+        "C06",
+        "C05",
+        "C07"
+      ],
+      "Q03": [
+        "C09",
+        "C08",
+        "C10"
+      ]
+    }
+  },
+  "evaluation": null,
+  "evaluation_reason": "没有独立匹配标注或真实对接结果，不计算准确率、NDCG或录用率。",
+  "cf_enabled": false,
+  "bert_enabled": false
+}
